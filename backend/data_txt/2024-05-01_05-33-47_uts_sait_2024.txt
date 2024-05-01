@@ -1,0 +1,50 @@
+FORMULIR SOAL UJIAN TENGAH SEMESTER TAHUN AKADEMIK GENAP 2023/2024 CPMK 1 Mampu bekerja dalam tim dan mampu memahami perintah dasar linux serta mengkonfigurasikan  komputer  server.
+
+CPMK2  Mampu membuat berbagai skenario terkait sistem terdistribusi dengan menggunakan lebih dari satu server.
+
+CPMK 3 Mampu bekerja dengan  REST API.
+
+CPMK 4 Mampu membangun  front-end dan mengintegrasikan dengan REST API.
+
+Instruksi: ⚫ Wajib dikerjakan sendiri, tidak diperbolehkan bekerja sama dengan rekan  lain. Akan ada pengurangan poin jika bekerja  sama dengan rek an lain.
+
+⚫ Silahkan membuat dokumen jawaban (file PDF) yang berisi screenshot hasil eksekusi kode/ perintah dari setiap soal.
+
+⚫ Silahkan membuat video demonstrasi maksimal 10 menit . Dalam video tersebut demonstrasikan  jawaban untuk setiap poin di soal.
+
+⚫ Untuk membuat REST API menggunakan bahasa pemrograman PHP dan diperbolehkan  jika menggunakan fr amework . Untuk f ront-end bisa menggunakan bahasa pemrograman apapun.
+
+⚫ Jawaban dalam bentuk dokumen PDF  (screenshot ), video demonstrasi  dan source - codes (beserta file sql)  bisa diupload ke google drive . Alternatif lain sou rce code dapat diupload di github  dan video dapat diup load di youtu be. Selanjutnya link google drive / github/ youtube  dituliskan d alam file PDF yang sudah  diberi Nama -NIM dan dapat disubmit ke LMS E lok. Pastikan link google dri ve/ youtube/ github  sudah dapat diakses dari luar.
+
+MATA UJIAN  : Praktikum Sistem Administrasi dan Informasi Terdistribusi KODE MK  : SVPL214405 SKS : 2 PRODI  : D.4 Teknologi Rekayasa Perangkat Lunak TANGGAL UJIAN  : Rabu, 24 -04-2024 WAKTU  : 3 Jam [ 12.30 WIB - 15.30 WIB] SIFAT UJIAN  : Open Book DOSEN  PENGAMPU  : Dr.Eng. Ganjar Alfian, S.T., M.Eng.
+
+Airlangga Adi Hermawan, S.T., M.Sc. , Ph.D.
+
+: FORMULIR SOAL UJIAN TENGAH SEMESTER TAHUN AKADEMIK GENAP 2023/2024 1. Materi Uji CPMK1 :  (Bobot 20%) .  Buatlah tiga buah table ( mahasiswa, matakuliah, perkuliahan ). Struktur table bisa dilihat dibawah ini. Untuk mempercepat pengerjaan bisa menggunakan SQL client software  yang sudah tersedia ( dbeaver, phpmyadmin, sqlyog, dll ).
+
+Nama database : sait_db_uts .
+
+a. Table mahasiswa Table : mahasiswa nim varchar(10), PK nama  varchar(20) alamat  varchar(40) tanggal_lahir  date b. Table matakuliah Table : matakuliah kode_mk  varchar(10), PK nama_mk  varchar(20) sks int(2) c. Table perkuliahan Table : perkuliahan id_perkuliahan  int(5), PK, Auto Increment nim varchar(10), FK mahasiswa (nim) kode_mk  varchar(10), FK matakuliah (kode_mk) nilai double 2. Materi Uji CPMK 2 : (Bobot 20%). Silahkan mengisi data di dalam table yang sudah dibuat sesuai contoh dibawah ini.  Nilai dari kolom id_perkuliahan  tidak harus sama  seperti contoh  karena Auto Increment .
+
+a. Table mahasiswa b. Table matakuliah c. Table perkuliahan FORMULIR SOAL UJIAN TENGAH SEMESTER TAHUN AKADEMIK GENAP 2023/2024 d. Buatlah SQL JOIN di SQL client software  yang dipakai, sehingga jika dieksekusi hasilnya seperti dibawah ini. SQL ini nantinya akan dipakai oleh REST API (soal nomer 3) untuk menampilkan semua nilai mahasiswa.
+
+3. Materi Uji CPMK 3 : (Bobot 30%). Dengan menggunakan tiga table diatas, buatlah REST API dengan format  JSON untuk mengelola data nilai mahasiswa, detail fungsinya seperti di bawah ini  (poin a sampai dengan e). REST API dibuat menggunakan bahasa pemrograman PHP dan boleh jika menggunakan framework . Untuk setiap fungsi, silahka n melakukan test akses dengan Software Postman . Proses eksekusi melalui Software Postman , mohon untuk juga di presentasikan  di dalam video  demo nstrasi .
+
+a. Menampilkan semua nilai mahasiswa.
+
+b. Menampilkan nilai mahasiswa tertentu (berdasarkan parameter nim).
+
+c. Memasukkan nilai baru  untuk mahasiswa tertentu .
+
+d. Mengupdate nilai (berdasarkan parameter nim dan kode_mk).
+
+e. Menghapus nilai (berdasarkan parameter nim dan kode_mk).
+
+4. Materi Uji CPMK 4 : (Bobot 30%). Buatlah program front-end sederhana yang memanggil REST API tersebut untuk menampilkan semua nilai mahasiswa. Hasil eksekusi program, mohon untuk juga dipresentasik an di dalam video.  Berikut adalah detail fungsi yang harus ada di front-end.
+
+a) Menampilkan semua nilai mahasiswa.
+
+b) Memasukkan nilai baru  untuk mahasiswa tertentu .
+
+c) Mengupdate nilai mahasiswa tertentu .
+
